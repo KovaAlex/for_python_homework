@@ -32,11 +32,13 @@ points = 0
 #     if i in scrable:
 #         points += scrable[i]
 # print(f'{points} - очков')
-if word[0] in scrable:
- for i in range(len(word)):
-       points += scrable.get(word[i], 0)
+# if word[0] in scrable:
+#  for i in range(len(word)):
+#        points += scrable.get(word[i], 0)
+# print(f'{points} - очков')
+for char in word:
+    points += scrable.get(char, 0)
 print(f'{points} - очков')
-
         
     
     
